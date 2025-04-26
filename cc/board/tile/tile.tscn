@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://jxkbyiro2ary"]
+
+[ext_resource type="Texture2D" uid="uid://deupitl6dxfaj" path="res://board/tile/border_smal_512.png" id="1_yv74f"]
+[ext_resource type="Script" path="res://tile.gd" id="2_5bg3y"]
+
+[node name="Tile" type="Sprite2D"]
+texture = ExtResource("1_yv74f")
+script = ExtResource("2_5bg3y")

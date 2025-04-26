@@ -1,5 +1,14 @@
-[gd_scene format=3 uid="uid://cgtqquwo5fvaj"]
+[gd_scene load_steps=2 format=3 uid="uid://cgtqquwo5fvaj"]
+
+[ext_resource type="Texture2D" uid="uid://n0bcmja0h31f" path="res://board/tile/city_background.png" id="1_s8tdl"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Board" type="Node2D" parent="."]
+
+[node name="CityBackground" type="Sprite2D" parent="Board"]
+position = Vector2(551, 322)
+texture = ExtResource("1_s8tdl")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
