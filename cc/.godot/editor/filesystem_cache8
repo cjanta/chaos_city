@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745651735
-game.tscn::PackedScene::5234198736257380773::1745651735::0::1::::<><>::uid://jxkbyiro2ary::::res://board/tile/tile.tscn
+::res://::1745652665
+game.tscn::PackedScene::5234198736257380773::1745652665::0::1::::<><>::uid://n0bcmja0h31f::::res://board/gfx/city_background.png
 icon.svg::CompressedTexture2D::7132849549738486579::1745650749::1745650759::1::::<><>::
 tile.gd::GDScript::-1::1745651315::0::1::::<>Sprite2D<>::
 ::res://board/::1745651302
-::res://board/gfx/::1745651352
-::res://board/tile/::1745652137
+::res://board/gfx/::1745652665
+city_background.png::CompressedTexture2D::964129343943649905::1745652071::1745652665::1::::<><>::
+::res://board/tile/::1745652665
 border_smal_512.png::CompressedTexture2D::7482231038305282597::1745651225::1745651352::1::::<><>::
-city_background.png::CompressedTexture2D::964129343943649905::1745652071::1745652144::1::::<><>::
 tile.tscn::PackedScene::679790510518247346::1745651352::0::1::::<><>::uid://deupitl6dxfaj::::res://board/tile/border_smal_512.png<>res://tile.gd

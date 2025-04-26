@@ -1,14 +1,39 @@
 [gd_scene load_steps=2 format=3 uid="uid://cgtqquwo5fvaj"]
 
-[ext_resource type="Texture2D" uid="uid://n0bcmja0h31f" path="res://board/tile/city_background.png" id="1_s8tdl"]
+[ext_resource type="Texture2D" uid="uid://n0bcmja0h31f" path="res://board/gfx/city_background.png" id="1_s8tdl"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Board" type="Node2D" parent="."]
 
 [node name="CityBackground" type="Sprite2D" parent="Board"]
-position = Vector2(551, 322)
+position = Vector2(960, 540)
+scale = Vector2(2.36719, 1.54883)
 texture = ExtResource("1_s8tdl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 324)
+position = Vector2(960, 540)
+
+[node name="Top" type="Panel" parent="."]
+offset_left = 466.0
+offset_top = 17.0
+offset_right = 1449.0
+offset_bottom = 131.0
+
+[node name="Left" type="Panel" parent="."]
+offset_left = 27.0
+offset_top = 148.0
+offset_right = 334.0
+offset_bottom = 929.0
+
+[node name="Right" type="Panel" parent="."]
+offset_left = 1585.0
+offset_top = 157.0
+offset_right = 1894.0
+offset_bottom = 928.0
+
+[node name="Bottom" type="Panel" parent="."]
+offset_left = 383.0
+offset_top = 947.0
+offset_right = 1552.0
+offset_bottom = 1061.0
