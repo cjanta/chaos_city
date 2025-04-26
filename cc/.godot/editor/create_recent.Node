@@ -1,5 +1,6 @@
+Label
+Node2D
+TileMapLayer
 Panel
 Camera2D
 Sprite2D
-TileMapLayer
-Node2D

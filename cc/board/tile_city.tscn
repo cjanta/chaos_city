@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk6g2bl2hyh4c"]
+
+[ext_resource type="Texture2D" uid="uid://ckmnyfxu711yd" path="res://board/gfx/128.png" id="1_syg5s"]
+[ext_resource type="Script" path="res://board/tile_city.gd" id="1_wymc6"]
+
+[node name="tile_city" type="Node2D"]
+script = ExtResource("1_wymc6")
+
+[node name="128" type="Sprite2D" parent="."]
+texture = ExtResource("1_syg5s")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -49.0
+offset_top = 35.0
+offset_right = 49.0
+offset_bottom = 58.0
+text = "0,0"
+horizontal_alignment = 1

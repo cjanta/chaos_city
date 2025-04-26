@@ -13,7 +13,6 @@ config_version=5
 config/name="cc"
 run/main_scene="res://game.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 

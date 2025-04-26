@@ -1,1 +1,5 @@
 res://game.tscn
+res://board/tile_city.tscn
+res://city_tiles.gd
+res://board/tile_city.gd
+res://board.gd
