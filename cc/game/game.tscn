@@ -1,0 +1,900 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgtqquwo5fvaj"]
+
+[ext_resource type="Script" path="res://board/board.gd" id="1_4gn0q"]
+[ext_resource type="Texture2D" uid="uid://c7xs60t3ykpco" path="res://board/gfx/city_background_template.png" id="2_8vaqb"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Board" type="Node2D" parent="."]
+script = ExtResource("1_4gn0q")
+
+[node name="CityBackground" type="Sprite2D" parent="Board"]
+position = Vector2(975, 532)
+texture = ExtResource("2_8vaqb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="TopLeft" type="Panel" parent="."]
+clip_contents = true
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 452.0
+offset_bottom = 108.0
+
+[node name="Panel" type="Panel" parent="TopLeft"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 8.0
+offset_right = 86.0
+offset_bottom = 72.0
+
+[node name="ColorRect" type="ColorRect" parent="TopLeft/Panel"]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+
+[node name="Label" type="Label" parent="TopLeft/Panel"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 87.0
+text = "Action"
+horizontal_alignment = 1
+
+[node name="Panel2" type="Panel" parent="TopLeft"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 72.0
+
+[node name="ColorRect" type="ColorRect" parent="TopLeft/Panel2"]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/Panel2"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+
+[node name="Label" type="Label" parent="TopLeft/Panel2"]
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 87.0
+text = "Action"
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="TopLeft"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 8.0
+offset_right = 218.0
+offset_bottom = 72.0
+
+[node name="ColorRect" type="ColorRect" parent="TopLeft/Panel3"]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/Panel3"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+
+[node name="Label" type="Label" parent="TopLeft/Panel3"]
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 87.0
+text = "Action"
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="TopLeft"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 8.0
+offset_right = 284.0
+offset_bottom = 72.0
+
+[node name="ColorRect" type="ColorRect" parent="TopLeft/Panel4"]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/Panel4"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+
+[node name="Label" type="Label" parent="TopLeft/Panel4"]
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 87.0
+text = "Action"
+horizontal_alignment = 1
+
+[node name="Panel5" type="Panel" parent="TopLeft"]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 8.0
+offset_right = 350.0
+offset_bottom = 72.0
+
+[node name="ColorRect" type="ColorRect" parent="TopLeft/Panel5"]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/Panel5"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+
+[node name="Label" type="Label" parent="TopLeft/Panel5"]
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 87.0
+text = "Action"
+horizontal_alignment = 1
+
+[node name="Panel6" type="Panel" parent="TopLeft"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 8.0
+offset_right = 416.0
+offset_bottom = 72.0
+
+[node name="ColorRect" type="ColorRect" parent="TopLeft/Panel6"]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/Panel6"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+
+[node name="Label" type="Label" parent="TopLeft/Panel6"]
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 87.0
+text = "Action"
+horizontal_alignment = 1
+
+[node name="TopRight" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1494.0
+offset_top = 8.0
+offset_right = 1910.0
+offset_bottom = 88.0
+grow_horizontal = 0
+
+[node name="Label3" type="Label" parent="TopRight"]
+offset_left = 165.0
+offset_top = 3.0
+offset_right = 285.0
+offset_bottom = 27.0
+text = "Date: 2050.01"
+
+[node name="Label2" type="Label" parent="TopRight"]
+offset_left = 295.0
+offset_top = 3.0
+offset_right = 395.0
+offset_bottom = 27.0
+text = "Score: 0"
+
+[node name="Label" type="Label" parent="TopRight"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 155.0
+offset_bottom = 27.0
+text = "Mode: Kill 'em all"
+
+[node name="Label4" type="Label" parent="TopRight"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 28.0
+offset_right = 155.0
+offset_bottom = 52.0
+text = "Cash: 0"
+
+[node name="Left" type="Panel" parent="."]
+offset_left = 8.0
+offset_top = 120.0
+offset_right = 452.0
+offset_bottom = 987.0
+
+[node name="own_gangs" type="Panel" parent="Left"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 437.0
+offset_bottom = 285.0
+
+[node name="ColorRect" type="ColorRect" parent="Left/own_gangs"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.261458, 0.644038, 0.359244, 1)
+
+[node name="Panel" type="Panel" parent="Left/own_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 135.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/own_gangs/ColorRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="Left/own_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 4.0
+offset_right = 277.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/own_gangs/ColorRect/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel3" type="Panel" parent="Left/own_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 4.0
+offset_right = 423.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/own_gangs/ColorRect/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel4" type="Panel" parent="Left/own_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 143.0
+offset_right = 135.0
+offset_bottom = 271.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/own_gangs/ColorRect/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel5" type="Panel" parent="Left/own_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 143.0
+offset_right = 277.0
+offset_bottom = 271.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/own_gangs/ColorRect/Panel5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel6" type="Panel" parent="Left/own_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 143.0
+offset_right = 423.0
+offset_bottom = 271.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/own_gangs/ColorRect/Panel6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="other_gangs" type="Panel" parent="Left"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 296.0
+offset_right = 437.0
+offset_bottom = 576.0
+
+[node name="ColorRect" type="ColorRect" parent="Left/other_gangs"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.952941, 0.2, 0.211765, 1)
+
+[node name="Panel" type="Panel" parent="Left/other_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 135.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/other_gangs/ColorRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="Left/other_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 4.0
+offset_right = 277.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/other_gangs/ColorRect/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel3" type="Panel" parent="Left/other_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 4.0
+offset_right = 423.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/other_gangs/ColorRect/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel4" type="Panel" parent="Left/other_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 143.0
+offset_right = 135.0
+offset_bottom = 271.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/other_gangs/ColorRect/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel5" type="Panel" parent="Left/other_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 143.0
+offset_right = 277.0
+offset_bottom = 271.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/other_gangs/ColorRect/Panel5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel6" type="Panel" parent="Left/other_gangs/ColorRect"]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 143.0
+offset_right = 423.0
+offset_bottom = 271.0
+
+[node name="TextureRect" type="TextureRect" parent="Left/other_gangs/ColorRect/Panel6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="gang_actions" type="Panel" parent="Left"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 592.0
+offset_right = 433.0
+offset_bottom = 865.0
+
+[node name="ColorRect" type="ColorRect" parent="Left/gang_actions"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.427493, 0.427493, 0.427493, 1)
+
+[node name="Button" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 136.0
+offset_bottom = 56.0
+text = "Move"
+autowrap_mode = 3
+
+[node name="Button2" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 8.0
+offset_right = 276.0
+offset_bottom = 56.0
+text = "Attack"
+autowrap_mode = 3
+
+[node name="Button3" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 8.0
+offset_right = 412.0
+offset_bottom = 56.0
+text = "Chaos"
+autowrap_mode = 3
+
+[node name="Button4" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 60.0
+offset_right = 136.0
+offset_bottom = 108.0
+text = "Control"
+autowrap_mode = 3
+
+[node name="Button5" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 60.0
+offset_right = 276.0
+offset_bottom = 108.0
+text = "Bribe"
+autowrap_mode = 3
+
+[node name="Button6" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 60.0
+offset_right = 412.0
+offset_bottom = 108.0
+text = "Hide"
+autowrap_mode = 3
+
+[node name="Button7" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 114.0
+offset_right = 136.0
+offset_bottom = 162.0
+text = "Equip"
+autowrap_mode = 3
+
+[node name="Button8" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 114.0
+offset_right = 276.0
+offset_bottom = 162.0
+text = "Heal"
+autowrap_mode = 3
+
+[node name="Button9" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 114.0
+offset_right = 412.0
+offset_bottom = 162.0
+text = "Influence"
+autowrap_mode = 3
+
+[node name="Button10" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 167.0
+offset_right = 136.0
+offset_bottom = 215.0
+text = "Research"
+autowrap_mode = 3
+
+[node name="Button11" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 167.0
+offset_right = 276.0
+offset_bottom = 215.0
+text = "Snitch"
+autowrap_mode = 3
+
+[node name="Button12" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 167.0
+offset_right = 412.0
+offset_bottom = 215.0
+text = "Sell"
+autowrap_mode = 3
+
+[node name="Button13" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 218.0
+offset_right = 136.0
+offset_bottom = 266.0
+text = "Give"
+autowrap_mode = 3
+
+[node name="Button14" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 218.0
+offset_right = 276.0
+offset_bottom = 266.0
+text = "None"
+autowrap_mode = 3
+
+[node name="Button15" type="Button" parent="Left/gang_actions/ColorRect"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 218.0
+offset_right = 412.0
+offset_bottom = 266.0
+text = "Terminate"
+autowrap_mode = 3
+
+[node name="Right" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1494.0
+offset_top = 120.0
+offset_right = 1910.0
+offset_bottom = 776.0
+grow_horizontal = 0
+
+[node name="sector_stats" type="Panel" parent="Right"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 8.0
+offset_right = 409.0
+offset_bottom = 61.0
+
+[node name="background" type="ColorRect" parent="Right/sector_stats"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.360784, 0.580392, 0.72549, 1)
+
+[node name="sector" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 23.0
+text = "Sector"
+
+[node name="sector2" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 70.0
+offset_right = 98.0
+offset_bottom = 23.0
+text = "D6"
+
+[node name="income" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 23.0
+offset_right = 63.0
+offset_bottom = 46.0
+text = "Income"
+
+[node name="income2" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 23.0
+offset_right = 98.0
+offset_bottom = 46.0
+text = "MI"
+
+[node name="tolerance" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 135.0
+offset_right = 216.0
+offset_bottom = 23.0
+text = "Tolerance"
+
+[node name="tolerance2" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 219.0
+offset_right = 249.0
+offset_bottom = 23.0
+text = "000"
+
+[node name="support" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 23.0
+offset_right = 213.0
+offset_bottom = 46.0
+text = "Support"
+
+[node name="support2" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 23.0
+offset_right = 249.0
+offset_bottom = 46.0
+text = "000"
+
+[node name="cash" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 10.0
+offset_right = 328.0
+offset_bottom = 33.0
+text = "Cash"
+
+[node name="cash2" type="Label" parent="Right/sector_stats/background"]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 10.0
+offset_right = 386.0
+offset_bottom = 33.0
+text = "000000"
+
+[node name="sector_sites" type="Panel" parent="Right"]
+offset_top = 73.0
+offset_right = 411.0
+offset_bottom = 238.0
+
+[node name="ColorRect" type="ColorRect" parent="Right/sector_sites"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.359892, 0.582191, 0.725384, 1)
+
+[node name="Panel" type="Panel" parent="Right/sector_sites/ColorRect"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 133.0
+offset_bottom = 134.0
+
+[node name="TextureRect" type="TextureRect" parent="Right/sector_sites/ColorRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Right/sector_sites/ColorRect/Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Site 1"
+horizontal_alignment = 1
+
+[node name="Panel2" type="Panel" parent="Right/sector_sites/ColorRect"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 5.0
+offset_right = 269.0
+offset_bottom = 133.0
+
+[node name="TextureRect" type="TextureRect" parent="Right/sector_sites/ColorRect/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Right/sector_sites/ColorRect/Panel2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Site 2"
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Right/sector_sites/ColorRect"]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 4.0
+offset_right = 405.0
+offset_bottom = 132.0
+
+[node name="TextureRect" type="TextureRect" parent="Right/sector_sites/ColorRect/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Right/sector_sites/ColorRect/Panel3"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Site 3"
+horizontal_alignment = 1
+
+[node name="sector_mod" type="Panel" parent="Right"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 249.0
+offset_right = 411.0
+offset_bottom = 639.0
+
+[node name="ColorRect" type="ColorRect" parent="Right/sector_mod"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.360784, 0.580392, 0.72549, 1)
+
+[node name="Label" type="Label" parent="Right/sector_mod/ColorRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 14.0
+offset_right = 53.0
+offset_bottom = 37.0
+text = "gangs stats und sector mods"
+
+[node name="BotLeft" type="Panel" parent="."]
+clip_contents = true
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 992.0
+offset_right = 452.0
+offset_bottom = 1072.0
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="BotLeft"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 72.0
+text = "Events"
+autowrap_mode = 3
+
+[node name="Button2" type="Button" parent="BotLeft"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 8.0
+offset_right = 138.0
+offset_bottom = 72.0
+text = "Com
+Link"
+autowrap_mode = 3
+
+[node name="Button3" type="Button" parent="BotLeft"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 8.0
+offset_right = 212.0
+offset_bottom = 72.0
+text = "Combat"
+autowrap_mode = 3
+
+[node name="Button4" type="Button" parent="BotLeft"]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 8.0
+offset_right = 284.0
+offset_bottom = 72.0
+text = "Finance"
+autowrap_mode = 3
+
+[node name="Button5" type="Button" parent="BotLeft"]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 8.0
+offset_right = 350.0
+offset_bottom = 72.0
+text = "Gangs"
+autowrap_mode = 3
+
+[node name="Button6" type="Button" parent="BotLeft"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 8.0
+offset_right = 433.0
+offset_bottom = 72.0
+text = "Rankings"
+autowrap_mode = 3
+
+[node name="BotRight" type="Panel" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1494.0
+offset_top = 992.0
+offset_right = 1910.0
+offset_bottom = 1072.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="BotRight"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Turn"
+autowrap_mode = 3
